@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+    <title>Aurora Grove</title>
+</head>
+<style>
+    body
+    {
+        color: #39395f;
+        background-color: #f5eec2;
+    }
+    iframe
+    {
+        margin-left: 200px;
+    }
+    nav{
+        color: #a9c25d;
+    }
+    marquee 
+    {
+        height: 50%;
+        width: 50%;
+    }
+     #showcase
+    {
+        background-image: url("slider2.jpg");
+       color: #f5eec2;
+        
+    }
+    #icons
+    {
+        background-color: #f5eec2;
+    }
+    #footer
+    {
+        background-color: #39395f;
+        color: #f5eec2;
+    }
+    #newsletter
+    {
+        background-color: #39395f;
+        color: #f5eec2;
+    }
+    #footer .nav-link
+    {
+        color: #f5eec2;
+    }
+    
+    .banner{position: relative;width: 100%;height: 100vh; padding: 0px 100px;
+        display: flex;justify-content: flex-start;align-items: center;}
+        .banner:before{
+            content: '';
+            position: absolute;
+            top: 0;right: 0;
+            width: 400px;height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .banner video{position: absolute;top: 0;left: 0;width: 100%;height: 100%;object-fit: cover;opacity: 1;}
+        .banner .txt{position: relative;max-width: 550px;z-index: 2;}
+        .banner .txt h2{color: #f5eec2;font-size: 50px;}
+        .banner .txt p{color:#f5eec2;font-size: 20px;margin: 5px 0 25px;}
+        .banner .txt a{position: relative;text-decoration:none;display: inline-block;background:#fff;margin-left: 40px;}
+        .banner .vbox{position: relative;width: 100%;height: 400px;background-color: #fff;margin-left: 40px;} 
+        .banner .video{opacity: 1;}
+</style>
+<body>
+			
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <nav id="logo" class="nav navbar-brand"><img src="Foundation.png" style="height: 10%; width: 10%;"></img>Aurora Grove</nav>
+          <!-- <a class="navbar-brand" href="#">Aurora Grove</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#carouselExampleCaptions">Hero Slider</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#icons">Services/Products</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link active " href="#quotes">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+      <div class="banner">
+        <video src="sanc.mp4" muted autoplay loop type="sanc.mp4"></video>
+        <div class="txt">
+            <h2>Aurora GROVE</h2>
+           <p>The Modern Wildlife Sanctuary</p>
+        </div>
+        <!-- <div class="vbox">
+            <video src="sanc.mp4"></video>
+        </div> -->
+        <ul class="sci">
+            <li><a href=""><img src="" alt=""></a></li>
+            <li><a href=""><img src="" alt=""></a></li>
+            <li><a href=""><img src="" alt=""></a></li>
+        </ul>
+    </div>
+    <div>
+    <section id="showcase" class="d-flex justify-content-center align-items-center">
+        <div id="overlay"></div>
+        <div id="header" class="container text-center">
+            <h3 class="display-5 mb-0">MODERN WILDLIFE SANCTUARY</h3>
+            <h1 class="display-1">AURORA GROVE</h1>
+            <p class="lead d-none d-md-block">The Sanctuary where animals are given a new life and tourists a memory to cherish forever.</p>
+            <button id="book" class="btn btn-lg btn-primary px-5" data-toggle="modal" data-target="#bookingModal">BOOK NOW</button>
+        </div>
+    </section>
+
+    <section id="icons">
+        <div class="container text-center mt-5">
+            <h2>YOU SHOW UP, WE PITCH THE SERVICE.</h2>
+            <div class="row">
+                <div class="col-md-4 p-3">
+                    <img src="images/icons/tent.png" alt="" class="img-fluid d-none d-md-inline">
+                    <h3>Tents You Want</h3>
+                    <p class="lead">We provide different kind of camping experience for the tourists with wide range of tents facilities available at our sanctuary!</p>
+                </div>
+                <div class="col-md-4 p-3">
+                    <img src="images/icons/campfire.png" alt="" class="img-fluid d-none d-md-inline">
+                    <h3>Fireplace You Want</h3>
+                    <p class="lead">For tourists who are in search of amazing campfire or fireplace experience, Aurora Grove is the best sanctuary to visit that'll give you the experience amidst wildlife</p>
+                </div>
+                <div class="col-md-4 p-3">
+                    <img src="images/icons/nature.png" alt="" class="img-fluid d-none d-md-inline">
+                    <h3>Amenities You Want</h3>
+                    <p class="lead">We have all different kind of Amenities that you want like mid-sanctuary camping with full care taken that wildlifeisn't disturbed!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center mt-2 p-3">
+            <h3>WE’VE CREATED A CAMPING EXPERIENCE THAT’S TURN-KEY AND HASSLE FREE.</h3>
+            <div class="row m-2">
+                <div class="col-md-6 p-3">
+                    <div class="card">
+                        <img src="images/winter.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title text-primary" id="exp">EXPERIENCE</h2>
+                            <p class="card-text">Visit Aurora Grove for an experience like never before with our vast sanctuary.We give this experience at a very nominal rate and also with our guide if the tourists want to. You can also select the audio guide which is also available at Aurora </p>
+                            <a href="" class="btn btn-lg btn-outline-primary">Go Somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-3">
+                    <div class="card">
+                        <img src="images/dogs.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title text-primary" id="expo">EXPLORE</h2>
+                            <p class="card-text">With our different entrances featuring the most likely animals to be spotted we have dhikala entrance for tuskers elephant as well as 8 other gates featuring different animals to be spotted most likely</p>
+                            <a href="" class="btn btn-lg btn-outline-primary">Go Somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quotes">
+        <div class="container text-center mt-4">
+            <h3>WHAT OUR HAPPY TOURISTS ARE SAYING</h3>
+            <div class="row">
+                <div class="col-md-4 my-2">
+                    <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                    <div class="card">
+                        <img src="tour1.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title"> <blockquote class="blockquote">
+                                <p>The Best Sanctuary i've visited so far, so many amazing experiences.</p>
+                                <footer class="blockquote-footer">Son Heuen</footer>
+                            </blockquote></h2>
+                            <!-- <p class="card-text">With our different entrances featuring the most likely animals to be spotted we have dhikala entrance for tuskers elephant as well as 8 other gates featuring different animals to be spotted most likely</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-2">
+                    <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                    <div class="card">
+                        <img src="tour2.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title"> <blockquote class="blockquote">
+                                <p>The Animals here are treated with the utmost amount of care which was very heartwarming to see!</p>
+                                <footer class="blockquote-footer">Alisha John</footer>
+                            </blockquote></h2>
+                            <!-- <p class="card-text">With our different entrances featuring the most likely animals to be spotted we have dhikala entrance for tuskers elephant as well as 8 other gates featuring different animals to be spotted most likely</p> -->
+                        </div>
+                </div>
+                </div>
+                <div class="col-md-4 my-2">
+                    <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                    <div class="card">
+                        <img src="tour3.webp" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title"> <blockquote class="blockquote">
+                                <p>The open jeep safari was so extravagant.We enjoyed a lot at aurora grove with authentic safari experience.</p>
+                                <footer class="blockquote-footer">Tiger Group </footer>
+                            </blockquote></h2>
+                           
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-7 mb-3">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="slider1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Amazing Scenery</h5>
+                          <p>Aurora Grove has the perfect tropical experience with scenery.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="slider3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Indian Animals</h5>
+                          <p>Indian Animals like Deer are extremely common at Aurora Grove.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="slider2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Foreign Animals</h5>
+                          <p>Foreign Animals like Zebra are also found at Aurora Sanctuary</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                <div class="col-lg-5">
+                    <h3>TOURISM MADE COZY</h3>
+                    <p class="lead">Your tourism has been made extremely affordable as well joyful with aurora grove sanctuary. Book at your will and enjoy the experience at your will.</p>
+                    <a href="">See for yourself <i class="fa fa-arrow-right"></i></a>
+                </div>
+                <br>
+                <br>
+                <div class="btn btn-success">BOOK NOW</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container text-center mt-5">
+            <h3>WHAT OTHER SANCTUARIES AND AUTHORITIES ARE SAYING</h3>
+            <h5 class="text-primary">#AURORAGROVE</h5>
+            <div class="row mt-4">
+                <div class="col-6 col-lg-3 mb-4">
+                    <img src="images/gallery/social1.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <img src="images/gallery/social2.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <img src="images/gallery/social3.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <img src="images/gallery/social4.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <img src="images/gallery/social5.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <img src="images/gallery/social6.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <img src="images/gallery/social7.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-6 col-lg-3 mb-4">
+                    <img src="images/gallery/social8.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container text-center mt-4">
+            <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+            <blockquote class="blockquote">
+                <p>We're very happy to say that Aurora Grove has maintained the standard for the wildlife sanctuary and that it has been taking utmost care of the animals within their sanctuary.
+                    The endangered species are specially monitored in the Arora Grove Wildlife Sanctuary. 
+                    If they reproduce and grow in number while under protection, few specimens can be kept for breeding in the conservation parks for their survival. 
+                </p>
+                <footer class="blockquote-footer">Wildlife Institute of India</footer>
+            </blockquote>
+        </div>
+    </section>
+
+<marquee behavior="" direction=""><img src="contact.avif" alt="" height="200px" width="300px"></marquee>
+    <section class="cont" id="contact">
+        <div class="container">
+            <div class="contactinfo">
+            <div>
+                <h2>Contact Info</h2>
+                <ul class="Info">
+                    <li class="i">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg> </span>
+                        <span>
+                          C-1009, The First, B/H Keshav Baugh Party Plot Nr Shivalik High Street, <br>
+                           Vastrapur, Ahmedabad, Gujarat 380015
+                        </span>
+                    </li>
+                    <li class="i">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                        </svg></span>
+                        <span>lor@gmail.com</span>
+                    </li>
+                    <li class="i">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                          <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg></span>
+                        <span>22140988</span>
+                    </li>
+                    <li class="i">
+                      <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                      </svg></span>
+                      <span id="timings">Sanctuary Timings</span>
+                      <span>7:00am - 9:00pm</span>
+                  </li>
+                </ul>
+            </div>
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/groups/raoiitacademy"><img src="icon1.png" alt="" srcset=""></a></li>
+                <li><a href="https://twitter.com/?lang=en-in"><img src="icon2.png" alt="" srcset=""></a></li>
+                <li><a href="https://www.instagram.com/p/CUF_wpIrkeO/?utm_medium=share_sheet"><img src="icon3.png" alt="" srcset=""></a></li>
+                <li><a href="https://in.pinterest.com/"><img src="icon4.png" alt="" srcset=""></a></li>
+                <li><a href="https://www.linkedin.com/search/results/all/?keywords=rao%20information%20technology%20pvt.%20ltd.&origin=RICH_QUERY_SUGGESTION&position=4&searchId=4bbaf71f-a682-49c9-bfd4-788e3757e2e9&sid=Z25"><img src="icon5.png" alt="" srcset=""></a></li>
+            </ul>
+            </div>
+            <div class="contactform">
+                <h2>Send a Message</h2>
+                <div class="formBox">
+                    <div class="inputBox w50">
+                        <input type="text" name="" id="" required>
+                        <span>First-Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="" id="" required>
+                        <span>Last-Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="" id="" required>
+                        <span>E-mail Address</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="" id="" required>
+                        <span>Mobile Number</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea required></textarea> 
+                        <span>Write Your Message Here....</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="submit"  value="Send" name="" id="" required>
+                        
+                    </div>
+                </div>
+            </div> 
+        </div> 
+
+    <section id="newsletter">
+        <div class="container text-white text-center py-5">
+            <p class="lead">JOIN OUR NEWSLETTER FOR DEALS AND UPDATES AND OFFERS</p>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-8 col-md-6 col-lg-4">
+                    <form action="" class="form-inline">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Your Email" id="">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary">Join Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472308.30980375194!2d73.38428313281251!3d22.3570771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3960655e48c71e55%3A0xbed4568089e1c0c2!2sJambughoda%20Wildlife%20Sanctuary!5e0!3m2!1sen!2sin!4v1651403986257!5m2!1sen!2sin" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    <section id="footer" class="p-3">
+        <ul class="nav text-center justify-content-center flex-column flex-sm-row">
+            <li class="nav-item">
+                <a href="#quotes" class="nav-link ">TESTIMONIALS</a>
+            </li>
+            <li class="nav-item">
+                <a href="#exp" class="nav-link">EXPERIENCE</a>
+            </li>
+            <li class="nav-item">
+                <a href="#expo" class="nav-link ">EXPLORE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#contact">CONTACT</a>
+            </li>
+            <li class="nav-item">
+                <a href="#carouselExampleCaptions" class="nav-link ">SLIDER</a>
+            </li>
+            <li class="nav-item">
+                <a href="#bookingModal" class="nav-link" data-toggle="modal" data-target="#bookingModal">BOOK NOW</a>
+            </li>
+        </ul>
+    </section>
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
